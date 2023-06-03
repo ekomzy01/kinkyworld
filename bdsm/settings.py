@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-5v(b=2!jwp_sp9m3gr&47z_9mr+cfb(w0f^+3&#vcerhcghwzs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kinkyworld-production.up.railway.app', '*']
+ALLOWED_HOSTS = ['http://kinkyworld-production.up.railway.app', '*']
+
+CSRF_TRUSTED_ORIGINS = ['http://'+['kinkyworld-production.up.railway.app']]
+
+
 
 
 # Application definition
