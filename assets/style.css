@@ -394,11 +394,11 @@ button {
 /* Styles for wrapping the search box start */
 
 .main {
-    flex: 1;
     margin: 0px 30px;
     display: inline-block;
     order: 2;
 }
+
 
 
 /* Bootstrap 4 text input with search icon */
