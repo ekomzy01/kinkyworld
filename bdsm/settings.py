@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'postgresql_database',
         'USER': 'postgres',
         'PASSWORD': '001ekomzy',
-        'HOST': '0.0.0.0',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
