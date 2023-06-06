@@ -285,6 +285,9 @@
       userFormData.email = form.email.value;
     }
 
+    console.log("Shipping Info:", shippingInfo);
+    console.log("User Info:", userFormData);
+
     let url = "{% url 'process_order' %}";
     fetch(url, {
       method: "POST",
