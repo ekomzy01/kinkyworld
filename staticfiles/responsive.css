@@ -403,6 +403,11 @@
   .home-main {
     flex: 1;
   }
+  @media (max-width: 575px) {
+    .main-cart {
+      display: flex;
+    }
+  }
   .input-group {
     width: auto;
     margin-right: 0px;
