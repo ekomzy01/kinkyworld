@@ -403,11 +403,6 @@
   .home-main {
     flex: 1;
   }
-  @media (max-width: 575px) {
-    .main-cart {
-      display: flex;
-    }
-  }
   .input-group {
     width: auto;
     margin-right: 0px;
@@ -500,5 +495,8 @@
   }
   .location_main {
     padding: 30px 0px 30px 0px;
+  }
+  .main-cart {
+    display: block;
   }
 }
