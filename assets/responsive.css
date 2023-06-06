@@ -254,6 +254,13 @@
   .main {
     margin: 0px 0px;
   }
+  .main {
+    margin: 0px 0px;
+    flex: none;
+  }
+  .home-main {
+    flex: 1;
+  }
   .input-group {
     width: auto;
     margin-right: 0px;
