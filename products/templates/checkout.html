@@ -139,9 +139,22 @@
 
       <br />
       <div class="box-element hidden" id="payment-info">
-        <small>Paypal Options</small>
-        <!-- <button id="make-payment">Make payment</button> -->
-        <div id="paypal-button-container"></div>
+        <!-- <small>Paypal Options</small> -->
+        <button
+          class="btn btn-secondary d-block align-items-center"
+          id="make-payment"
+          style="
+            background: #f26522;
+            border: #f26522;
+            width: 100%;
+            color: #fff;
+            padding: 5px;
+          "
+          onclick="paymentMode()"
+        >
+          Make payment
+        </button>
+        <!-- <div id="paypal-button-container"></div> -->
       </div>
     </div>
 
@@ -239,6 +252,10 @@
     .addEventListener("click", function (e) {
       submitFormData();
     });
+
+  function paymentMode() {
+    window.location.href = "{% url 'payment' %}";
+  }
 
   function submitFormData() {
     console.log("Payment button clicked");

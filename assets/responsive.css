@@ -369,11 +369,15 @@
   .header_section_top {
     display: none;
   }
+  .payment-text {
+    font-size: 20px;
+    margin-top: 10px;
+  }
   .containt_main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between !important;
+    justify-content: space-between;
   }
   .toggle_icon {
     cursor: pointer;
