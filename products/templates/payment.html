@@ -13,9 +13,9 @@
       </div>
     </div>
   </div>
-  <div class="header_section">
+  <div class="header_section" style="margin: 20px 10px">
     <div class="container">
-      <div class="containt_main">
+      <div class="containt_main justify-content-between">
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
@@ -30,7 +30,7 @@
           ><img src="{% static 'images/toggle-icon.png' %}"
         /></span>
 
-        <div class="main">
+        <div class="main input-grou" style="flex: none">
           <!-- Another variation with a button -->
           <div class="input-grou">
             <a href="{% url 'cart' %}">
@@ -46,8 +46,11 @@
       </div>
     </div>
   </div>
-  <h1 class="payment-text" style="color: #fff; font-weight: bold;"
-    Our payment gateway is faulty, Please contact the Admin to make your payment
-  </h1>
+  <div class="box-element" style="margin: 20px">
+    <h1 class="payment-text" style="color: #f26522; font-weight: bold">
+      Our payment gateway is faulty, Please contact the Admin to make your
+      payment
+    </h1>
+  </div>
 </div>
 {% endblock %}

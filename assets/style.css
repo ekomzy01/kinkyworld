@@ -345,6 +345,10 @@ button {
   display: none;
 }
 
+.main-cart {
+  display: none;
+}
+
 .header_box {
   order: 2;
   display: flex;
@@ -390,7 +394,7 @@ button {
 }
 
 .input-grou {
-  display: none;
+  display: none !important;
 }
 
 /* Bootstrap 4 text input with search icon */
