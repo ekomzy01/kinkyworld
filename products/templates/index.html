@@ -1,4 +1,14 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+<style>
+  .input-grou {
+    display: none;
+  }
+  @media screen and (max-width: 575px) {
+    .input-grou {
+      display: flex;
+    }
+  }
+</style>
 
 <div>
   <div class="logo_section">

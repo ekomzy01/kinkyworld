@@ -1,4 +1,15 @@
 {% extends 'base.html' %} {% load static %} {% block content%}
+<style>
+  .input-grou {
+    display: none;
+  }
+  @media screen and (max-width: 575px) {
+    .input-grou {
+      display: flex;
+    }
+  }
+</style>
+
 <div class="container">
   <div class="logo_section">
     <div class="container">
@@ -15,7 +26,7 @@
   </div>
   <div class="header_section" style="margin: 20px 10px">
     <div class="container">
-      <div class="containt_main justify-content-between">
+      <div class="containt_main input-grou justify-content-between">
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
@@ -46,11 +57,31 @@
       </div>
     </div>
   </div>
-  <div class="box-element" style="margin: 20px">
-    <h1 class="payment-text" style="color: #f26522; font-weight: bold">
+  <div class="box d-flex gap-2" style="margin: 20px">
+    <h1
+      class="payment-text box-element d-flex align-item-center"
+      style="color: #f26522; font-weight: bold"
+    >
       Our payment gateway is faulty, Please contact the Admin to make your
       payment
     </h1>
+    <form class="form-control" action="">
+      <input class="m-2" type="text" value="Name" /> <br />
+      <input class="m-2" type="email" value="Email" /> <br />
+      <textarea
+        class="m-2"
+        style="width: 80%"
+        type="text-area"
+        value="name"
+      ></textarea>
+      <input
+        class="m-2 btn btn-secondary"
+        style="background-color: #f26522; border: #f26522"
+        type="submit"
+        name=""
+        id=""
+      />
+    </form>
   </div>
 </div>
 {% endblock %}
